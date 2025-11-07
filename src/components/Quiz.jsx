@@ -120,9 +120,7 @@ const Quiz = () => {
     if (answer !== null) {
       setQuestionSeleted(answer);
     }
-    // else {
-    //   setQuestionSeleted("");
-    // }
+
     console.log(userAnswers);
   }, [stt, userAnswers]);
 
