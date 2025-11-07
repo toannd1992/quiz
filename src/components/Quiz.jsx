@@ -119,14 +119,16 @@ const Quiz = () => {
     const answer = userAnswers[stt];
     if (answer !== null) {
       setQuestionSeleted(answer);
-    } else {
-      setQuestionSeleted("");
     }
+    // else {
+    //   setQuestionSeleted("");
+    // }
     console.log(userAnswers);
   }, [stt, userAnswers]);
 
   const handlNext = () => {
     if (stt < data.length - 1) {
+      setQuestionSeleted("");
       setStt((prev) => prev + 1);
     } else {
       setIsEnded(true);
